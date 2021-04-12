@@ -115,7 +115,7 @@ class BooksController extends Controller
         // Normalize the title
         $slug = str_slug($slug_name);
 
-        // Get any that could possibly be related.
+       
         // This cuts the queries down by doing it once.
         $allSlugs = $this->get_related_slugs($slug_name);
 
